@@ -1,0 +1,105 @@
+/* =============================== */
+/* Navbar Base                     */
+/* =============================== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  z-index: 1000;
+  padding: 0 150px;
+  transition: transform 0.4s ease, opacity 0.4s ease, background 0.3s ease;
+}
+
+/* Show / Hide on Scroll */
+.navbar-show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.navbar-hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* =============================== */
+/* Container Layout                */
+/* =============================== */
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =============================== */
+/* Logo Section                    */
+/* =============================== */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Image logo */
+.logo-img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+/* =============================== */
+/* Right Side                      */
+/* =============================== */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Navigation Link */
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.75;
+}
+
+/* =============================== */
+/* Gradient Button                 */
+/* =============================== */
+
+.nav-button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(90deg, #f093b0 0%, #a855f7 100%);
+  border: none;
+  border-radius: 50px;
+  padding: 12px 28px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(248, 113, 176, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(248, 113, 176, 0.45);
+}
+
+

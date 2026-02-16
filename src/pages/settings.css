@@ -1,0 +1,104 @@
+.settings-page {
+  min-height: 100vh;
+  background: #000;
+  color: white;
+  padding: 60px 5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.settings-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.settings-container h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #a78bfa, #e98fd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.settings-card {
+  background: #1a1a1f;
+  border: 1px solid #2f2f35;
+  border-radius: 16px;
+  padding: 25px;
+}
+
+.settings-card h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #999;
+}
+
+.form-group input {
+  padding: 12px;
+  background: #111;
+  border: 1px solid #2f2f35;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #a78bfa;
+}
+
+.theme-toggle {
+  display: flex;
+  gap: 15px;
+}
+
+.theme-toggle button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #2f2f35;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle button.active {
+  background: linear-gradient(90deg, #a78bfa, #e98fd8);
+  border-color: transparent;
+}
+
+.save-button {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #a78bfa, #e98fd8);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-button:hover {
+  opacity: 0.9;
+}
+
+.save-message {
+  margin-top: 10px;
+  color: #10b981;
+}

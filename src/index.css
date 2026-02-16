@@ -1,0 +1,83 @@
+/* ========================= */
+/* GOOGLE FONT */
+/* ========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ========================= */
+/* RESET */
+/* ========================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================= */
+/* ROOT STRUCTURE */
+/* ========================= */
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  background: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ========================= */
+/* HIDE SCROLLBAR PROPERLY */
+/* ========================= */
+
+/* Chrome, Edge, Safari */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+}
+  
+
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* IE / Old Edge */
+body {
+  -ms-overflow-style: none;
+}
+
+/* Keep scrolling enabled */
+html,
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Prevent horizontal overflow globally */
+#root {
+  overflow-x: hidden;
+}
+body.light {
+  background: #f9fafb;
+  color: #111;
+}
+
+body.light .settings-card,
+body.light .user-card,
+body.light .content-card {
+  background: white;
+  border-color: #ddd;
+  color: #111;
+}
+
+body.light input,
+body.light select {
+  background: #fff;
+  color: #111;
+}
